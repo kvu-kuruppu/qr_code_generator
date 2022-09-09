@@ -34,28 +34,14 @@ class _GenerateScreenState extends State<GenerateScreen> {
                 ],
               ),
               const Divider(),
-              const SizedBox(
-                height: 20,
-              ),
-              Row(
-                children: const [
-                  Text(
-                    'Enter your details',
-                    style: TextStyle(fontSize: 25),
+              Padding(
+                padding: const EdgeInsets.all(20.0),
+                child: TextField(
+                  controller: _textController,
+                  decoration: const InputDecoration(
+                    hintText: 'Type anything',
                   ),
-                ],
-              ),
-              const SizedBox(
-                height: 20,
-              ),
-              TextField(
-                controller: _textController,
-                decoration: const InputDecoration(
-                  hintText: 'Type anything',
                 ),
-              ),
-              const SizedBox(
-                height: 20,
               ),
               TextButton(
                 style: TextButton.styleFrom(
